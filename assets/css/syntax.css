@@ -1,0 +1,142 @@
+/* Syntax Highlighting for Code Blocks - Rouge Theme */
+
+.highlight {
+  background-color: #f8f8f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 0;
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+.highlight pre {
+  margin: 0;
+  padding: 20px;
+  background: none;
+  border: none;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+/* Base syntax highlighting colors */
+.highlight .c { color: #998; font-style: italic } /* Comment */
+.highlight .k { color: #000; font-weight: bold } /* Keyword */
+.highlight .s { color: #d14 } /* String */
+.highlight .nf { color: #900; font-weight: bold } /* Name.Function */
+.highlight .nc { color: #900; font-weight: bold } /* Name.Class */
+.highlight .mi { color: #099 } /* Number.Integer */
+.highlight .mh { color: #099 } /* Number.Hex */
+.highlight .m { color: #099 } /* Number */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .o { color: #000; font-weight: bold } /* Operator */
+.highlight .p { color: #000 } /* Punctuation */
+.highlight .cm { color: #998; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #998; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000; background-color: #fdd } /* Generic.Deleted */
+.highlight .gi { color: #000; background-color: #dfd } /* Generic.Inserted */
+.highlight .gu { color: #aaa } /* Generic.Subheading */
+.highlight .gd .x { color: #000; background-color: #faa } /* Generic.Deleted.Specific */
+.highlight .gi .x { color: #000; background-color: #afa } /* Generic.Inserted.Specific */
+
+/* Language-specific highlighting */
+.highlight .kt { color: #458; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #099 } /* Literal.Number */
+.highlight .s { color: #d14 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .si { color: #d14 } /* Literal.String.Interpol */
+.highlight .se { color: #d14 } /* Literal.String.Escape */
+.highlight .sc { color: #d14 } /* Literal.String.Char */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .sx { color: #990073 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d14 } /* Literal.String.Single */
+.highlight .s0 { color: #d14 } /* Literal.String */
+
+/* Shell/Bash specific */
+.highlight .sh { color: #d14 } /* String.Heredoc */
+.highlight .sb { color: #d14 } /* String.Backtick */
+
+/* Python specific */
+.highlight .bp { color: #999 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #900; font-weight: bold } /* Name.Function.Magic */
+
+/* JavaScript specific */
+.highlight .kc { color: #000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #000; font-weight: bold } /* Keyword.Declaration */
+
+/* Diff highlighting */
+.highlight .diff .hl-header { color: #999; font-weight: bold }
+.highlight .diff .hl-deletion { background-color: #fee }
+.highlight .diff .hl-addition { background-color: #efe }
+
+/* Line numbers (if enabled) */
+.highlight .lineno {
+  color: #ccc;
+  display: inline-block;
+  padding: 0 10px;
+  border-right: 1px solid #e5e5e5;
+  margin-right: 20px;
+  text-align: right;
+}
+
+/* Inline code styling */
+:not(pre) > code {
+  background-color: #f8f8f8;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+  border: 1px solid #e5e5e5;
+  color: #333;
+}
+
+/* Responsive code blocks */
+@media (max-width: 768px) {
+  .highlight pre {
+    padding: 15px;
+    font-size: 0.85em;
+  }
+  
+  .highlight {
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .highlight pre {
+    padding: 12px;
+    font-size: 0.8em;
+  }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  .highlight {
+    background-color: #2d2d2d;
+    border-color: #444;
+  }
+  
+  .highlight pre {
+    color: #f8f8f2;
+  }
+  
+  .highlight .c { color: #6272a4 } /* Comment */
+  .highlight .k { color: #ff79c6 } /* Keyword */
+  .highlight .s { color: #f1fa8c } /* String */
+  .highlight .nf { color: #50fa7b } /* Name.Function */
+  .highlight .nc { color: #50fa7b } /* Name.Class */
+  .highlight .mi { color: #bd93f9 } /* Number.Integer */
+  .highlight .mh { color: #bd93f9 } /* Number.Hex */
+  .highlight .m { color: #bd93f9 } /* Number */
+  .highlight .nb { color: #8be9fd } /* Name.Builtin */
+  .highlight .o { color: #ff79c6 } /* Operator */
+  .highlight .p { color: #f8f8f2 } /* Punctuation */
+}

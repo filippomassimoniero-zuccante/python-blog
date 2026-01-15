@@ -1,0 +1,72 @@
+# Site settings
+title: Your Blog Title
+description: >- 
+  A minimal coding blog focused on clean design and technical content.
+baseurl: ""
+url: "https://yourusername.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+
+# Collections for better organization
+collections:
+  drafts:
+    output: true
+    permalink: /:collection/:name/
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Syntax highlighting settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Development settings
+livereload: true
+incremental: true
+
+# SEO and social
+author: Your Name
+twitter_username: your_twitter
+github_username: your_github
+
+# Default values for front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Your Name"
+      categories: "coding"
+  - scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"
+      author: "Your Name"
+      categories: "coding"
