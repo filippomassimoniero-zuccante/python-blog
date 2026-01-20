@@ -1,14 +1,17 @@
 # Site settings
-title: Your Blog Title
-description: >- 
-  A minimal coding blog focused on clean design and technical content.
+title: "Python Arcade Tutorial"
+description: >-
+  A minimal coding blog focused on Python tutorials and modern development.
 baseurl: ""
 url: "https://yourusername.github.io"
+
+# GitHub metadata (fixes build error)
+repository: filippo/yourusername.github.io
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
+future: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -26,16 +29,18 @@ exclude:
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
+  - vendor/bundle/ruby/3.4.0/gems/minima-*/_layouts/home.html
+  - vendor/bundle/ruby/3.4.0/gems/minima-*/_layouts/default.html
 
 # Collections for better organization
 collections:
   drafts:
-    output: true
+    output: false
     permalink: /:collection/:name/
 
-# Pagination
-paginate: 5
-paginate_path: "/page:num/"
+# Pagination disabled - only 22 posts currently
+# paginate: 5
+# paginate_path: "/page:num/"
 
 # Syntax highlighting settings
 kramdown:

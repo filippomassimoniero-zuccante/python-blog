@@ -1,33 +1,21 @@
 ---
-layout: default
+layout: home
+title: "Python Arcade Tutorial"
 ---
 
-<div class="home">
-  <h1 class="page-heading">Posts</h1>
-  
-  {% if site.posts.size > 0 %}
-    <ul class="post-list">
-      {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {% if post.categories %}
-          <small class="post-categories">
-            {% for category in post.categories %}
-              {{ category }}{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-          </small>
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
+<h1>Tutorial su Python Arcade 🐍🎮</h1>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {% else %}
-    <p>No posts yet. Check back soon!</p>
-  {% endif %}
-</div>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <a href="{{ post.url | relative_url }}" class="post-link">
+    <li class="post-item">
+      <h2>{{ post.title | escape }}</h2>
+    </li>
+  </a>
+  {% endfor %}
+</ul>
+
+<footer class="site-footer">
+  <p>In questo sito ho raccolto un po' di guide su Python e per la libreria Python Arcade</p>
+  <p>Se trovate un bug o un refuso mandatemi una mail</p>
+</footer>

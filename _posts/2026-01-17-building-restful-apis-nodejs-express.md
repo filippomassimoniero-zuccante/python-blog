@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building RESTful APIs with Node.js and Express"
-date: 2026-01-17 14:00:00 +0100
+date: 2024-01-17 14:00:00 +0100
 author: "Your Name"
 categories: coding
 tags: [nodejs, express, api, backend]

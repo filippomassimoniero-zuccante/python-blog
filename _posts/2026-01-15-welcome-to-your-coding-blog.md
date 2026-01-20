@@ -1,7 +1,8 @@
 ---
+published: true
 layout: post
 title: "Welcome to Your Coding Blog"
-date: 2026-01-15 12:00:00 +0100
+date: 2024-01-15 12:00:00 +0100
 author: "Your Name"
 categories: coding
 tags: [welcome, jekyll, markdown]
@@ -74,13 +75,15 @@ _posts/2026-01-15-my-new-post.md
 
 ```yaml
 ---
+published: true
 layout: post
 title: "Your Post Title"
-date: 2026-01-15 12:00:00 +0100
+date: 2024-01-15 12:00:00 +0100
 author: "Your Name"
 categories: coding
 tags: [python, tutorial, example]
 ---
+published: true
 ```
 
 Happy blogging! 🎉

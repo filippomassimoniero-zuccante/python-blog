@@ -1,7 +1,10 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.0"
+# Use github-pages gem which includes compatible Jekyll version
 gem "github-pages", group: :jekyll_plugins
+
+# Development dependencies
+gem "webrick"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"

@@ -35,7 +35,6 @@ BlogProject/
 │   ├── js/             # JavaScript
 │   ├── images/         # Images organized by type
 │   └── README.md       # Asset organization guide
-├── about.md             # About page
 ├── index.md             # Homepage
 └── .github/workflows/   # GitHub Pages deployment
 ```

@@ -1,0 +1,338 @@
+/* Chris Gregori Style - Minimal Typography-Focused Design */
+
+:root {
+  --font-size-base: 1.25rem;     /* Larger base font (20px) */
+  --font-size-h1: 2.8rem;       /* Larger titles */
+  --font-size-h2: 2.2rem;       /* Larger subtitles */
+  --font-size-h3: 1.6rem;
+  --font-size-nav: 1.1rem;
+  --line-height-base: 1.7;        /* Generous line spacing */
+  --line-height-headings: 1.2;
+  --max-width: 880px;            /* 10% wider than 800px */
+  --spacing-unit: 2.5rem;        /* Larger spacing */
+  --color-text: #000;
+  --color-text-light: #666;
+  --color-border: #e5e5e5;
+  --color-link: #000;
+  --color-link-hover: #ff6b35;
+  --color-code-bg: #f8f8f8;
+  --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-system);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: var(--line-height-headings);
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  color: #000000;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  margin-top: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Header */
+.site-header {
+  margin: var(--spacing-unit) 0 2.5rem;
+  padding-bottom: var(--spacing-unit);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-title {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.site-title a:hover {
+  color: #ff6b35;
+}
+
+/* Navigation */
+.site-nav {
+  margin: 1.5rem 0 0 0;
+  padding: 0;
+}
+
+.site-nav a {
+  font-size: var(--font-size-nav);
+  color: var(--color-text-light);
+  text-decoration: none;
+  margin-right: 2rem;
+  transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: #ff6b35;
+}
+
+.site-nav a:hover h2 {
+  color: #ff6b35;
+}
+
+/* Main Content */
+.site-content {
+  min-height: 60vh;
+  padding: 2rem 0;
+}
+
+/* Post List */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.post-item {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  list-style: none;
+  transition: border-color 0.3s ease;
+}
+.post-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-color: #ff6b35;
+}
+
+.post-item .post-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* The "Stretched Link" Magic */
+.post-item .post-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; 
+}
+
+.post-item h2 {
+  margin: 0;
+  transition: color 0.2s;
+}
+
+.post-item:hover h2 {
+  color: #ff6b35;
+}
+
+/* Post Page */
+.post {
+  margin-bottom: 4rem;
+}
+
+.post h1 {
+  font-size: 3.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+
+.post-content {
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.post-content h2 {
+  margin-top: 3rem;
+}
+
+.post-content h3 {
+  margin-top: 2.5rem;
+}
+
+.post-content p {
+  margin-bottom: 2rem;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.post-content li {
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
+
+.post-content blockquote {
+  border-left: 3px solid #ff6b35;
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+  font-style: italic;
+  color: #666666;
+  background-color: #fefefe;
+  padding: 1rem 1.5rem 1rem 2rem;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Links */
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover h2 {
+  color: var(--color-link-hover);
+}
+
+/* Code */
+code {
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  background-color: var(--color-code-bg);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: var(--color-code-bg);
+  border: 1px solid #ffe5dd;
+  border-radius: 5px;
+  padding: 2rem;
+  overflow-x: auto;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 920px) {
+  .main-container {
+    padding: 0 1.5rem;
+  }
+  
+  :root {
+    --max-width: 100%;
+    --spacing-unit: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 1.1rem;
+    --font-size-h1: 2.4rem;
+    --font-size-h2: 1.9rem;
+    --spacing-unit: 1.5rem;
+  }
+  
+  .site-header {
+    margin: var(--spacing-unit) 0;
+  }
+  
+  .site-nav a {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .post-item h2 a {
+    font-size: var(--font-size-h2);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-base: 1rem;
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.6rem;
+    --spacing-unit: 1rem;
+  }
+  
+  .site-header {
+    margin: var(--spacing-unit) 0;
+  }
+  
+  pre {
+    padding: 1.5rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  .site-nav,
+  .site-footer {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  pre {
+    background: #fff;
+    border: 1px solid #000;
+  }
+}

@@ -117,26 +117,3 @@
   }
 }
 
-/* Dark mode support (optional) */
-@media (prefers-color-scheme: dark) {
-  .highlight {
-    background-color: #2d2d2d;
-    border-color: #444;
-  }
-  
-  .highlight pre {
-    color: #f8f8f2;
-  }
-  
-  .highlight .c { color: #6272a4 } /* Comment */
-  .highlight .k { color: #ff79c6 } /* Keyword */
-  .highlight .s { color: #f1fa8c } /* String */
-  .highlight .nf { color: #50fa7b } /* Name.Function */
-  .highlight .nc { color: #50fa7b } /* Name.Class */
-  .highlight .mi { color: #bd93f9 } /* Number.Integer */
-  .highlight .mh { color: #bd93f9 } /* Number.Hex */
-  .highlight .m { color: #bd93f9 } /* Number */
-  .highlight .nb { color: #8be9fd } /* Name.Builtin */
-  .highlight .o { color: #ff79c6 } /* Operator */
-  .highlight .p { color: #f8f8f2 } /* Punctuation */
-}
