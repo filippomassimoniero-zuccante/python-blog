@@ -2,16 +2,17 @@
 title: "Python Arcade Tutorial"
 description: >-
   A minimal coding blog focused on Python tutorials and modern development.
-baseurl: ""
-url: "https://yourusername.github.io"
+baseurl: "/python-blog"
+url: "https://filippomassimoniero-zuccante.github.io"
 
 # GitHub metadata (fixes build error)
-repository: filippo/yourusername.github.io
+repository: filippomassimoniero-zuccante/python-blog
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 future: true
+permalink: /:title/
 plugins:
   - jekyll-feed
   - jekyll-sitemap

@@ -60,7 +60,7 @@ h1 {
 
 h2 {
   font-size: var(--font-size-h2);
-  margin-top: 2.5rem;
+  margin-top: 0.1rem;
   font-weight: 600;
 }
 
@@ -194,7 +194,7 @@ p {
 }
 
 .post-content h2 {
-  margin-top: 3rem;
+  margin-top: 0.1rem;
 }
 
 .post-content h3 {
@@ -202,7 +202,7 @@ p {
 }
 
 .post-content p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .post-content ul,
@@ -262,6 +262,45 @@ pre code {
   background: none;
   padding: 0;
   border-radius: 0;
+}
+
+/* Copy Button */
+.code-wrapper {
+  position: relative;
+}
+
+.copy-code-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.4rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+
+.code-wrapper:hover .copy-code-button {
+  opacity: 1;
+}
+
+.copy-code-button:hover {
+  background-color: #f0f0f0;
+}
+
+.copy-code-button .check-icon {
+  display: none;
+  color: #22c55e;
+}
+
+.copy-code-button.copied .copy-icon {
+  display: none;
+}
+
+.copy-code-button.copied .check-icon {
+  display: block;
 }
 
 /* Responsive Design */
