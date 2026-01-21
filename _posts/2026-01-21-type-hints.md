@@ -52,7 +52,7 @@ Non servono a Python per "risolvere" il problema che succede quando passiamo un 
 
 Sono in un certo senso una "garanzia" che tu dai a VSCode che effettivamente quella variabile *dovrebbe essere* di quel tipo. Poi se facendo girare il programma non è così, python si avvierà lo stesso e arrivato al punto di codice "problematico", darà errore
 
-Questo problema non c'è nei linguaggi "fortemente tipizzati" (Strongly Typed), per esempio Java. Lì non possiamo proprio scrivere il codice senza scrivere i tipi corretti, e se proviamo a usare una funzione cambiando i tipi, il programma ci fermerà subito, quando proviamo a compilare
+Questo problema non c'è nei linguaggi "staticamente tipizzati" (Statically Typed), per esempio Java. Lì non possiamo proprio scrivere il codice senza scrivere i tipi corretti, e se proviamo a usare una funzione cambiando i tipi, il programma ci fermerà subito, quando proviamo a compilare
 
 Cercando online forse vi siete già imbattuti in codice scritto con type hints. Vi consiglio da adesso in poi di usarle 
 
