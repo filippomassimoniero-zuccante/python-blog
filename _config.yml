@@ -12,6 +12,7 @@ repository: filippomassimoniero-zuccante/python-blog
 markdown: kramdown
 highlighter: rouge
 future: true
+permalink: /:title/
 plugins:
   - jekyll-feed
   - jekyll-sitemap
