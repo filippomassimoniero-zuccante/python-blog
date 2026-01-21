@@ -2,7 +2,7 @@
 layout: post
 title: "Prova blog post"
 date: 2026-01-21 10:00:00 +0100
-author: "Filippo"
+author: "Prof Niero"
 categories: coding
 tags: [python, test]
 ---
